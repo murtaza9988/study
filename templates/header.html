@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <link rel="stylesheet"  href="styles.css">
+    <style>
+        
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    animation: slideInFromTop 1s ease-out;
+}
+     header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s;
+}
+
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    background: #fff;
+    transition: width 0.3s;
+    bottom: -5px;
+    left: 0;
+}
+
+header nav ul li a:hover {
+    color: #ddd;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+    </style>
+  
+</head>
+<body>
+    <header>
+  
+        <h1>Welcome to Our School</h1>
+        <nav> 
+        <ul >
+            <li><a href="/">Home</a></li>
+            <li><a href="/aboutus">AboutUs</a></li>
+            <li><a href="/staff">staff</a></li>
+            <li><a href="/contact">Contact</a></li>
+
+        </ul>
+    </nav>
+    </header>

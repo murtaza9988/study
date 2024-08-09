@@ -1,0 +1,25 @@
+{% extends "base.html"%}
+{% block context %}
+    <main>
+        <section class="userform.html">
+            <h2 style="text-align: center;">userform</h2>
+        <div class="row">
+            <div class="col-12">
+                <form method="post" >
+              
+                <button type="submit">save</button>
+                <br>
+                <div>
+                    output
+                    <input type="text" name="{{output}}/">
+                </div>
+              </div>
+                </form>
+             
+            </div>
+
+        </div>
+        </section>
+    </main>
+    {% endblock %}
+    

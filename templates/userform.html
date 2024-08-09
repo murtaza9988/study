@@ -1,0 +1,34 @@
+{% extends "base.html"%}
+{% block context %}
+    <main>
+        <section class="userform.html">
+            <h2 style="text-align: center;">userform</h2>
+        <div class="row">
+            <div class="col-12">
+                <form method="post" >
+               {% csrf_token %} 
+                 <div>
+                  <label for="value1"></label>value1</label>
+                    <input type="text" name="num1">
+                 </div>
+                 <label for="value2">value2</label>
+                 <input type="text" name="num2">
+              </div>
+              <br>
+              <div class="pt-4">
+                <button type="submit">save</button>
+                <br>
+                <div>
+                    output
+                    <input type="text" name="{{output}}/">
+                </div>
+              </div>
+                </form>
+             
+            </div>
+
+        </div>
+        </section>
+    </main>
+    {% endblock %}
+    
