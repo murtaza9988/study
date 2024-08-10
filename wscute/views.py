@@ -20,7 +20,7 @@ def userform(request):
         n1 = int(request.POST.get('num1'))
         n2 = int(request.POST.get('num2'))
         finallysa=n1+n2
-        print(finallysa)
+        print(finallysa),
         data={
             'n1':n1,
             'n2':n2,
